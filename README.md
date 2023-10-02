@@ -40,6 +40,15 @@ improvements include:
 
 - LLM integration/smart summarization (ingest entire paper with LLM and generate
   summary to display in graph)
-- Dynamic expansion of graph visualization (click on node, and perform a similarity search on link to display more papers or summarizations of other relevant sites)
+- Dynamic expansion of graph visualization (click on node, and perform a
+  similarity search on paper to display more papers or summarizations of other
+  relevant sites and information sources)
 - Better visualization handling (graph nodes often need to be manually moved so entire visualization is clear)
-- Better parsing of abstract/summary page on arxiv
+- Generate embeddings from paper summaries and cluster/link papers more
+  precisely (I haven't fully thought this through, but I think there are a lot
+  of interesting things to be done along these lines)
+
+## Known Issues
+- Multiple versions of the same paper on Arxiv are not properly joined into one
+  entity
+- Parsing of abstract/summary page on Arxiv occasionally is not done correctly
